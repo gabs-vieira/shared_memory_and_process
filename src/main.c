@@ -85,15 +85,16 @@ int main() {
     BITMAPFILEHEADER fileHeader;
     BITMAPINFOHEADER infoHeader;
 
+    printf("Carregando imagem BMP...\n");
     // Carrega imagem BMP
-    unsigned char* image = loadBMP("entrada.bmp", &fileHeader, &infoHeader);
+    unsigned char* image = loadBMP("../imagens/entrada.bmp", &fileHeader, &infoHeader);
 
     printf("Imagem carregada: %dx%d\n", infoHeader.biWidth, infoHeader.biHeight);
 
     // Aqui você pode processar a imagem (converter para cinza, aplicar filtros...)
 
     // Salva imagem de saída
-    saveBMP("saida.bmp", fileHeader, infoHeader, image);
+    saveBMP("../imagens/saida.bmp", fileHeader, infoHeader, image);
 
     free(image);
     return 0;
