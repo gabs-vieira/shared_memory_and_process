@@ -1,26 +1,12 @@
-C := gcc
-CFLAGS := -std=c99 -pedantic -lm
+CC=gcc
+CFLAGS=-Wall -O2
+SRC=src
+BIN=bin
 
-BINARY := <PROGRAM_NAME>
+all: main
 
-SRCDIR := src
-INCLUDEDIR := include
-OBJDIR := obj
-
-SOURCES := $(shell find $(SRCDIR) -name "*.c")
-OBJECTS := $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SOURCES))
-INCLUDES := $(addprefix -I,$(INCLUDEDIR))
-
-all: $(OBJDIR) $(BINARY)
-
-$(BINARY): $(OBJECTS)
-	$(CC) -o $@ $^ $(CFLAGS)
-
-$(OBJDIR):
-	mkdir $(OBJDIR)
-
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
-	$(CC) $(INCLUDES) -c -o $@ $^
+main: $(SRC)/main.c $(SRC)/bmp_io.c
+	$(CC) $(CFLAGS) -o $(BIN)/main $(SRC)/main.c $(SRC)/bmp_io.c
 
 clean:
-	rm -rf $(OBJDIR) $(BINARY)
+	rm -f $(BIN)/main
