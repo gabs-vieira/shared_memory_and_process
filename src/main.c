@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
     aplicarFiltroMediana(image, infoHeader, tamanho_mascara);
     printf("Filtro de mediana aplicado com máscara %dx%d.\n", tamanho_mascara, tamanho_mascara);
 
-    // Mede tempo do Laplaciano paralelo
+
     clock_gettime(CLOCK_MONOTONIC, &inicio);
 
     aplicarFiltroLaplacianoProcessos(image, infoHeader, tamanho_mascara, num_processos);

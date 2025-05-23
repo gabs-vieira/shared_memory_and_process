@@ -3,7 +3,7 @@ CFLAGS = -Wall -O2
 SRC = src
 BIN = bin
 
-OBJS = $(SRC)/main.c $(SRC)/bmp_io.c $(SRC)/conversao.c $(SRC)/filtro_mediana.c $(SRC)/filtro_laplaciano.c $(SRC)/processamento.c
+OBJS = $(SRC)/main.c $(SRC)/bmp_io.c $(SRC)/conversao.c $(SRC)/filtro_mediana.c $(SRC)/filtro_laplaciano.c
 
 
 
