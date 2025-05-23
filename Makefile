@@ -1,12 +1,16 @@
-CC=gcc
-CFLAGS=-Wall -O2
-SRC=src
-BIN=bin
+CC = gcc
+CFLAGS = -Wall -O2
+SRC = src
+BIN = bin
 
-all: main
+OBJS = $(SRC)/main.c $(SRC)/bmp_io.c $(SRC)/conversao.c $(SRC)/filtro_mediana.c $(SRC)/filtro_laplaciano.c $(SRC)/processamento.c
 
-main: $(SRC)/main.c $(SRC)/bmp_io.c
-	$(CC) $(CFLAGS) -o $(BIN)/main $(SRC)/main.c $(SRC)/bmp_io.c
+
+
+all: $(BIN)/main
+
+$(BIN)/main: $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS)
 
 clean:
 	rm -f $(BIN)/main
