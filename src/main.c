@@ -44,12 +44,14 @@ int main(int argc, char* argv[]) {
     converterParaTonsDeCinza(image, infoHeader);
     printf("Conversão para tons de cinza concluída.\n");
 
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
+
     // Filtro de mediana
     aplicarFiltroMediana(image, infoHeader, tamanho_mascara);
     printf("Filtro de mediana aplicado com máscara %dx%d.\n", tamanho_mascara, tamanho_mascara);
 
 
-    clock_gettime(CLOCK_MONOTONIC, &inicio);
+    
 
     aplicarFiltroLaplacianoProcessos(image, infoHeader, tamanho_mascara, num_processos);
     printf("Filtro Laplaciano paralelo aplicado com máscara %dx%d e %d processos.\n", tamanho_mascara, tamanho_mascara, num_processos);
