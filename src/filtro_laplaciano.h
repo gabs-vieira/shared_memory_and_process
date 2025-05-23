@@ -3,6 +3,6 @@
 
 #include "bmp_io.h"
 
-void aplicarFiltroLaplaciano(unsigned char* data, BITMAPINFOHEADER infoHeader, int tamanhoMascara);
+void aplicarFiltroLaplacianoProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER infoHeader, int tamanhoMascara, int num_processos);
 
 #endif
