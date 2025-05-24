@@ -3,10 +3,10 @@
 #include <string.h>
 #include <time.h>
 
-#include "../include/bmp_io.h"
-#include "../include/conversao.h"
-#include "../include/filtro_mediana.h"
-#include "../include/filtro_laplaciano.h"
+#include "bmp_io.h"
+#include "conversao.h"
+#include "filtro_mediana.h"
+#include "filtro_laplaciano.h"
 
 #define N_EXECUCOES 5
 
@@ -98,8 +98,6 @@ int main(int argc, char* argv[]) {
     // Aplica filtros em sequência na imagem original para salvar corretamente
     aplicarFiltroMedianaProcessos(image, infoHeader, tamanho_mascara, num_processos);
     aplicarFiltroLaplacianoProcessos(image, infoHeader, tamanho_mascara, num_processos);
-
-
     saveBMP(arquivo_saida, fileHeader, infoHeader, image);
 
     // Log em arquivo
