@@ -5,6 +5,8 @@
 #include <sys/shm.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <string.h>
+
 
 #include "bmp_io.h"
 #include "filtro_laplaciano.h"
@@ -17,7 +19,7 @@ void gerarMascaraLaplaciana(int tamanho, int* mascara) {
             -1, 4, -1,
             0, -1, 0
         };
-        for (int i = 0; i < 9; i++) mascara[i] = temp[i];
+        memcpy(mascara, temp, sizeof(temp));
     } else if (tamanho == 5) {
         int temp[25] = {
              0,  0, -1,  0,  0,
@@ -26,7 +28,7 @@ void gerarMascaraLaplaciana(int tamanho, int* mascara) {
              0, -1, -2, -1,  0,
              0,  0, -1,  0,  0
         };
-        for (int i = 0; i < 25; i++) mascara[i] = temp[i];
+        memcpy(mascara, temp, sizeof(temp));
     } else if (tamanho == 7) {
         int temp[49] = {
              0,  0,  0, -1,  0,  0,  0,
@@ -37,7 +39,7 @@ void gerarMascaraLaplaciana(int tamanho, int* mascara) {
              0,  0, -1, -2, -1,  0,  0,
              0,  0,  0, -1,  0,  0,  0
         };
-        for (int i = 0; i < 49; i++) mascara[i] = temp[i];
+       memcpy(mascara, temp, sizeof(temp));
     } else {
         printf("Tamanho de máscara inválido no Laplaciano (use 3, 5 ou 7).\n");
         exit(1);
