@@ -18,7 +18,7 @@ void converterParaTonsDeCinza(unsigned char* data, BITMAPINFOHEADER infoHeader) 
             unsigned char R = data[pos + 2];
 
             // Aplicando a fórmula do cinza
-            unsigned char gray = (unsigned char)(0.3 * R + 0.587 * G + 0.114 * B);
+            unsigned char gray = (unsigned char)(0.299 * R + 0.587 * G + 0.114 * B);
 
             // Define todos os canais para o tom de cinza
             data[pos]     = gray;  // B
