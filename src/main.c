@@ -67,6 +67,10 @@ int main(int argc, char* argv[]) {
     converterParaTonsDeCinza(image, infoHeader);
     printf("Conversão para tons de cinza concluída.\n");
 
+<<<<<<< HEAD
+=======
+    // Medição de tempo de execução
+>>>>>>> 8d71f84 (feat: make median filter as a paralel process)
     double tempo_total_mediana = 0;
     double tempo_total_laplaciano = 0;
 
