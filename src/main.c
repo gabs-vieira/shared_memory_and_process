@@ -3,10 +3,10 @@
 #include <string.h>
 #include <time.h>
 
-#include "bmp_io.h"
-#include "conversao.h"
-#include "filtro_mediana.h"
-#include "filtro_laplaciano.h"
+#include "../include/bmp_io.h"
+#include "../include/conversao.h"
+#include "../include/filtro_mediana.h"
+#include "../include/filtro_laplaciano.h"
 
 #define N_EXECUCOES 5
 
