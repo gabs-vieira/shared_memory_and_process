@@ -51,7 +51,8 @@ unsigned char calcularMediana(unsigned char* janela, int tamanho) {
 void aplicarFiltroMedianaProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER infoHeader, int tamanhoMascara, int num_processos) {
     int width = infoHeader.biWidth;
     int height = abs(infoHeader.biHeight);
-    int row_padded = (width * 3 + 3) & (~3); // largura da linha com padding de 4 bytes
+    // int row_padded = (width * 3 + 3) & (~3); // largura da linha com padding de 4 bytes
+    int row_padded = width * 3;
     int data_size = row_padded * height;
 
 

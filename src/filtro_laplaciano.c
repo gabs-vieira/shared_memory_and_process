@@ -50,7 +50,8 @@ void gerarMascaraLaplaciana(int tamanho, int* mascara) {
 void aplicarFiltroLaplacianoProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER infoHeader, int tamanhoMascara, int num_processos) {
     int width = infoHeader.biWidth;
     int height = abs(infoHeader.biHeight);
-    int row_padded = (width * 3 + 3) & (~3);
+    // int row_padded = (width * 3 + 3) & (~3);
+    int row_padded = width * 3;
     int data_size = row_padded * height;
 
     key_t chave = 1234;
@@ -110,6 +111,7 @@ void aplicarFiltroLaplacianoProcessos(unsigned char* dataOriginal, BITMAPINFOHEA
                     int y = i + mi;
                     int x = j + mj;
 
+                    // int pos = y * row_padded + x * 3;
                     int pos = y * row_padded + x * 3;
                     unsigned char valor = copia[pos];
 

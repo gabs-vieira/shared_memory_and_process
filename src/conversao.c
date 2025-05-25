@@ -7,7 +7,8 @@
 void converterParaTonsDeCinza(unsigned char* data, BITMAPINFOHEADER infoHeader) {
     int width = infoHeader.biWidth;
     int height = abs(infoHeader.biHeight);
-    int row_padded = (width * 3 + 3) & (~3);
+    // int row_padded = (width * 3 + 3) & (~3);
+    int row_padded = width * 3;
 
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
