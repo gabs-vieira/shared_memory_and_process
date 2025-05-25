@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "bmp_io.h"
+#include "../include/bmp_io.h"
 
 /**
  * Carrega uma imagem BMP em memória.

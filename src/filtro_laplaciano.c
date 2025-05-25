@@ -8,8 +8,8 @@
 #include <string.h>
 
 
-#include "bmp_io.h"
-#include "filtro_laplaciano.h"
+#include "../include/bmp_io.h"
+#include "../include/filtro_laplaciano.h"
 
 // Função para gerar a máscara Laplaciana dependendo do tamanho
 void gerarMascaraLaplaciana(int tamanho, int* mascara) {

@@ -6,8 +6,8 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "filtro_mediana.h"
-#include "bmp_io.h"
+#include "../include/filtro_mediana.h"
+#include "../include/bmp_io.h"
 
 
 /**
@@ -51,12 +51,9 @@ unsigned char calcularMediana(unsigned char* janela, int tamanho) {
 void aplicarFiltroMedianaProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER infoHeader, int tamanhoMascara, int num_processos) {
     int width = infoHeader.biWidth;
     int height = abs(infoHeader.biHeight);
-<<<<<<< HEAD
+
     // int row_padded = (width * 3 + 3) & (~3); // largura da linha com padding de 4 bytes
     int row_padded = width * 3;
-=======
-    int row_padded = (width * 3 + 3) & (~3); // largura da linha com padding de 4 bytes
->>>>>>> 8d71f84 (feat: make median filter as a paralel process)
     int data_size = row_padded * height;
 
 
