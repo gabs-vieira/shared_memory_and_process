@@ -3,6 +3,6 @@
 
 #include "bmp_io.h"
 
-void aplicarFiltroMediana(unsigned char* data, BITMAPINFOHEADER infoHeader, int tamanhoMascara);
+void aplicarFiltroMedianaProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER infoHeader, int tamanhoMascara, int num_processos);
 
 #endif
