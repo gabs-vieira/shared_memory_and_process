@@ -103,8 +103,8 @@ int main(int argc, char* argv[]) {
     // Log em arquivo
     FILE* log = fopen("output/tempo_execucao.log", "a");
     if (log) {
-        fprintf(log, "Arquivo: %s | Mascara: %d | Processos: %d | Média Mediana: %.6f s | Média Laplaciano: %.6f s\n",
-                arquivo_entrada, tamanho_mascara, num_processos, media_mediana, media_laplaciano);
+        fprintf(log, "Arquivo: %s | Mascara: %d | Processos: %d | Média Mediana: %.6f s | Média Laplaciano: %.6f s | Tempo Total de Execucao: %.6f s\n",
+                arquivo_entrada, tamanho_mascara, num_processos, media_mediana, media_laplaciano, (media_laplaciano+media_mediana));
         fclose(log);
     } else {
         perror("Erro ao escrever log");
