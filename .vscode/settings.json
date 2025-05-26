@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "conversao.h": "c"
+        "*.dbclient-js": "javascript",
+        "conversao.h": "c",
+        "filtro_mediana.h": "c",
+        "bmp_io.h": "c"
     }
 }
