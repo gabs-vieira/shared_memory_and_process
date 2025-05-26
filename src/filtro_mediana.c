@@ -34,6 +34,15 @@ unsigned char calcularMediana(unsigned char* janela, int tamanho) {
 }
 
 
+unsigned char acessarPixel(unsigned char* data, int x, int y, int width, int height) {
+    if (x < 0 || x >= width || y < 0 || y >= height) {
+        return 0;
+    }
+    int pos = (y * width + x) * 3;
+    return data[pos]; // Como está em tons de cinza, B=G=R
+}
+
+
 
 
 /**
@@ -112,30 +121,57 @@ void aplicarFiltroMedianaProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER
      * processo 0: linha 1, 1+num_processos, ...
      * processo 1: linha 2, 2+num_processos, ...
      */
-    for (int i = offset + id_seq; i < height - offset; i += num_processos) {
-        for (int j = offset; j < width - offset; j++) {
+    // for (int i = offset + id_seq; i < height - offset; i += num_processos) {
+    //     for (int j = offset; j < width - offset; j++) {
+    //         int k = 0;
+
+    //         // Monta a janela de vizinhança
+    //         for (int mi = -offset; mi <= offset; mi++) {
+    //             for (int mj = -offset; mj <= offset; mj++) {
+    //                 int y = i + mi;
+    //                 int x = j + mj;
+    //                 //int pos = y * row_padded + x * 3;
+    //                 //janela[k++] = copia[pos];  // R, G e B são iguais em tons de cinza
+    //                 janela[k++] = acessarPixel(copia, x, y, width, height);
+
+    //             }
+    //         }
+
+    //         // Calcula a mediana da janela
+    //         unsigned char mediana = calcularMediana(janela, janela_tam);
+
+    //         // Escreve o valor nos três canais da imagem (tons de cinza)
+    //         int pos = i * row_padded + j * 3;
+    //         buffer[pos]     = mediana;
+    //         buffer[pos + 1] = mediana;
+    //         buffer[pos + 2] = mediana;
+    //     }
+    // }
+
+    for (int i = id_seq; i < height; i += num_processos) {
+        for (int j = 0; j < width; j++) {
             int k = 0;
 
-            // Monta a janela de vizinhança
+            // Monta a janela
             for (int mi = -offset; mi <= offset; mi++) {
                 for (int mj = -offset; mj <= offset; mj++) {
                     int y = i + mi;
                     int x = j + mj;
-                    int pos = y * row_padded + x * 3;
-                    janela[k++] = copia[pos];  // R, G e B são iguais em tons de cinza
+                    janela[k++] = acessarPixel(copia, x, y, width, height);
                 }
             }
 
-            // Calcula a mediana da janela
+            // Calcula a mediana
             unsigned char mediana = calcularMediana(janela, janela_tam);
 
-            // Escreve o valor nos três canais da imagem (tons de cinza)
-            int pos = i * row_padded + j * 3;
+            // Grava o resultado nos 3 canais
+            int pos = (i * width + j) * 3;
             buffer[pos]     = mediana;
             buffer[pos + 1] = mediana;
             buffer[pos + 2] = mediana;
         }
     }
+
 
 
     free(copia);
