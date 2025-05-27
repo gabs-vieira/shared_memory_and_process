@@ -121,6 +121,8 @@ void aplicarFiltroMedianaProcessos(unsigned char* dataOriginal, BITMAPINFOHEADER
      * processo 0: linha 1, 1+num_processos, ...
      * processo 1: linha 2, 2+num_processos, ...
      */
+
+    // TODO: Remover ou manter isso comentado
     // for (int i = offset + id_seq; i < height - offset; i += num_processos) {
     //     for (int j = offset; j < width - offset; j++) {
     //         int k = 0;
