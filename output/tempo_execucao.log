@@ -1,7 +1,35 @@
-Arquivo: imagens/entrada.bmp | Mascara: 3 | Processos: 4 | Média Mediana: 0.009478 s | Média Laplaciano: 0.003225 s
-Arquivo: imagens/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.036109 s | Média Laplaciano: 0.003062 s
-Arquivo: imagens/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.111385 s | Média Laplaciano: 0.003628 s
-Arquivo: imagens/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.110050 s | Média Laplaciano: 0.003857 s
 Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.111495 s | Média Laplaciano: 0.003803 s
 Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.105199 s | Média Laplaciano: 0.003358 s
 Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.106213 s | Média Laplaciano: 0.003450 s
+Arquivo: images/entrada.bmp | Mascara: 3 | Processos: 4 | Média Mediana: 0.008780 s | Média Laplaciano: 0.003264 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.036898 s | Média Laplaciano: 0.002814 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.106385 s | Média Laplaciano: 0.003194 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 1 | Média Mediana: 0.124239 s | Média Laplaciano: 0.004035 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.045952 s | Média Laplaciano: 0.003962 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.121669 s | Média Laplaciano: 0.003660 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.124223 s | Média Laplaciano: 0.004567 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.046707 s | Média Laplaciano: 0.003729 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 1 | Média Mediana: 0.129414 s | Média Laplaciano: 0.004388 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 1 | Média Mediana: 0.133750 s | Média Laplaciano: 0.003987 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.050896 s | Média Laplaciano: 0.004053 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.118790 s | Média Laplaciano: 0.003912 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.134591 s | Média Laplaciano: 0.004137 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.048351 s | Média Laplaciano: 0.003677 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 1 | Média Mediana: 0.129669 s | Média Laplaciano: 0.003919 s
+
+
+Arquivo: images/entrada.bmp | Mascara: 3 | Processos: 1 | Média Mediana: 0.016587 s | Média Laplaciano: 0.001632 s | Tempo Total de Execucao: 0.018219 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 1 | Média Mediana: 0.109280 s | Média Laplaciano: 0.002686 s | Tempo Total de Execucao: 0.111966 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 1 | Média Mediana: 0.335080 s | Média Laplaciano: 0.003765 s | Tempo Total de Execucao: 0.338845 s
+
+Arquivo: images/entrada.bmp | Mascara: 3 | Processos: 2 | Média Mediana: 0.012284 s | Média Laplaciano: 0.003509 s | Tempo Total de Execucao: 0.015793 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 2 | Média Mediana: 0.060775 s | Média Laplaciano: 0.002858 s | Tempo Total de Execucao: 0.063633 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 2 | Média Mediana: 0.181622 s | Média Laplaciano: 0.004524 s | Tempo Total de Execucao: 0.186146 s
+
+Arquivo: images/entrada.bmp | Mascara: 3 | Processos: 3 | Média Mediana: 0.014845 s | Média Laplaciano: 0.003896 s | Tempo Total de Execucao: 0.018742 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 3 | Média Mediana: 0.048477 s | Média Laplaciano: 0.002988 s | Tempo Total de Execucao: 0.051464 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 3 | Média Mediana: 0.142590 s | Média Laplaciano: 0.003835 s | Tempo Total de Execucao: 0.146425 s
+
+Arquivo: images/entrada.bmp | Mascara: 3 | Processos: 4 | Média Mediana: 0.015292 s | Média Laplaciano: 0.003770 s | Tempo Total de Execucao: 0.019062 s
+Arquivo: images/entrada.bmp | Mascara: 5 | Processos: 4 | Média Mediana: 0.040907 s | Média Laplaciano: 0.002775 s | Tempo Total de Execucao: 0.043682 s
+Arquivo: images/entrada.bmp | Mascara: 7 | Processos: 4 | Média Mediana: 0.111288 s | Média Laplaciano: 0.003255 s | Tempo Total de Execucao: 0.114543 s

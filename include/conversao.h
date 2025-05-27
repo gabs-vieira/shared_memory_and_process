@@ -1,7 +1,7 @@
 #ifndef CONVERSAO_H
 #define CONVERSAO_H
 
-#include "bmp_io.h"
+#include "../include/bmp_io.h"
 
 void converterParaTonsDeCinza(unsigned char* data, BITMAPINFOHEADER infoHeader);
 
