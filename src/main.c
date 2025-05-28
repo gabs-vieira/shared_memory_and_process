@@ -8,7 +8,7 @@
 #include "../include/filtro_mediana.h"
 #include "../include/filtro_laplaciano.h"
 
-#define N_EXECUCOES 5
+#define N_EXECUCOES 30
 
 double medir_tempo_execucao(void (*funcao)(unsigned char*, BITMAPINFOHEADER, int, int),
                             unsigned char* imagem, BITMAPINFOHEADER infoHeader, int tamanho, int processos) {
